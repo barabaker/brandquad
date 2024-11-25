@@ -24,11 +24,15 @@ name = "brandquad"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "curl-cffi" },
     { name = "scrapy" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "scrapy", specifier = ">=2.11.2" }]
+requires-dist = [
+    { name = "curl-cffi", specifier = ">=0.7.3" },
+    { name = "scrapy", specifier = ">=2.11.2" },
+]
 
 [[package]]
 name = "certifi"
@@ -183,6 +187,28 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d1/91/d51202cc41fbfca7fa332f43a5adac4b253962588c7cc5a54824b019081c/cssselect-1.2.0.tar.gz", hash = "sha256:666b19839cfaddb9ce9d36bfe4c969132c647b92fc9088c4e23f786b30f1b3dc", size = 41423 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/06/a9/2da08717a6862c48f1d61ef957a7bba171e7eefa6c0aa0ceb96a140c2a6b/cssselect-1.2.0-py2.py3-none-any.whl", hash = "sha256:da1885f0c10b60c03ed5eccbb6b68d6eff248d91976fcde348f395d54c9fd35e", size = 18687 },
+]
+
+[[package]]
+name = "curl-cffi"
+version = "0.7.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "cffi" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/21/97/4df615296fcbbeab657eced4d30ee549ca7f9f692f1e967e9ca0a14c13f1/curl_cffi-0.7.3.tar.gz", hash = "sha256:901012e21af899bdf1278fd9fcee5aad6931ed56e1f5a620ffa90220c9e79f10", size = 136406 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/02/47/74cefea3d584ef2a291415c42f6e4167470ce10456d1610838355371f871/curl_cffi-0.7.3-cp38-abi3-macosx_10_9_x86_64.whl", hash = "sha256:890f1b0e1454977ff6bd388d29eb1eafb76bb8ef63d3c8b7539aafd4808a6cec", size = 5105778 },
+    { url = "https://files.pythonhosted.org/packages/9a/e6/9457d5e048b4beedae4a2ccf62f93fbaf345a6c38177af1ffb5e89fe5829/curl_cffi-0.7.3-cp38-abi3-macosx_11_0_arm64.whl", hash = "sha256:b5520bcf6284417e66c82728512e344b50bc0e9d8bd7949923b30558746b49a3", size = 2485713 },
+    { url = "https://files.pythonhosted.org/packages/90/2d/edb41cbcbef44081353346f763781b42ae2f7af9810994a8ed9b51f54f81/curl_cffi-0.7.3-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:43367efb8d48e9997cf7591084ed7529409ad98bb67e284ae152f2a15e4ee68e", size = 5715690 },
+    { url = "https://files.pythonhosted.org/packages/6c/c7/7d354eacd2f451020dc9cd4c38df0e01efc8604c05099d342d49e605e5e9/curl_cffi-0.7.3-cp38-abi3-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:ec6718bc5151b3e0ecc35aaf40078a39cc239405182c63fc95933eb7bff572dd", size = 5521131 },
+    { url = "https://files.pythonhosted.org/packages/f5/0c/550ee53daae735b9883ad1e404a49d5a8d68d06a24f810872f800d2e0711/curl_cffi-0.7.3-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9a90bfd0bcc7bf0f30ef6de6f4e612ea1bdc238a48928845532109a0273f6275", size = 6076147 },
+    { url = "https://files.pythonhosted.org/packages/04/5c/5a44eee5bba58b2487de228a42105c55ed42f3f7dcf65732bb7ebe9247fe/curl_cffi-0.7.3-cp38-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:3f9373ce27b20e65fb1e6cbea6e4411edca1f3b4440be68090b262eece728544", size = 6221177 },
+    { url = "https://files.pythonhosted.org/packages/e7/04/d5149beb9aafadfbbb94cf0941ec2d84d1caea6eba1974318a69efd7d86a/curl_cffi-0.7.3-cp38-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:a357d3da6aa8ccd41f1e6e422b9ff09ad4cc99b23b8f6299998cbfee6e690f01", size = 6004110 },
+    { url = "https://files.pythonhosted.org/packages/6d/6d/37c29d90af82f90d0309557d2dd0887a9d1231843bc4180af42d390293d7/curl_cffi-0.7.3-cp38-abi3-win32.whl", hash = "sha256:fe01be42c27667353028ee06802cc32e3936496e645a39175db4cf7bea45bb10", size = 4187752 },
+    { url = "https://files.pythonhosted.org/packages/5d/98/530b5dba79f1310fa32b3544e2566e0ea21c8c6b18230272ab52b71338b4/curl_cffi-0.7.3-cp38-abi3-win_amd64.whl", hash = "sha256:39e195a13b95bd7e4a1e8eb7804807b4504c462f6886fde01dfe4b7552fd965e", size = 3992982 },
 ]
 
 [[package]]
